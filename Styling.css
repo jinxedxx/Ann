@@ -569,3 +569,20 @@ button{
     padding:0px;
     overflow-x:hidden;
 }
+.music-button {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5);
+    transition: all 0.3s ease;
+}
+
+.music-button:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+}
