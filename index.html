@@ -17,12 +17,23 @@
    <script>
     window.onload = function() {
         if (confirm("Would you like to play some music? 🎶")) {
-            var audio = new Audio('Deftones.mp3');
-            audio.loop = true;
-            audio.play();
+         
+            var button = document.createElement('button');
+            button.innerHTML = "Play Music 🎵";
+            button.className = "music-button"; 
+            document.body.appendChild(button);
+
+          
+            button.addEventListener('click', function() {
+                var audio = new Audio('Deftones.mp3');
+                audio.loop = true;
+                audio.play();
+                button.style.display = 'none'; 
+            });
         }
     }
 </script>
+
 
         
 
