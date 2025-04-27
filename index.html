@@ -15,11 +15,19 @@
         <button class="button button1"> <a class="Link1" href="YES.html" target="_self">  Yes </a> </button>
         <button class="button button2"> <a class="Link2" href="No.html" target="_self" > No </a> </button>
         <audio autoplay loop>
-  <source src="Deftones.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-        
+ <audio id="bgMusic" loop>
+            <source src="Deftones.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
+        <script>
+            document.querySelectorAll("button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const audio = document.getElementById("bgMusic");
+                    audio.play().catch(e => console.log("Playback failed:", e));
+                });
+            });
+        </script>
         
 
     
