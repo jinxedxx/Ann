@@ -11,12 +11,13 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     color:#A86A4C;
     position: relative;
-    left:32%;
+    left:0%;
     top:25px;
     font-size:35px;
     max-width: 500px;
     white-space: normal;
     word-wrap: break-word;
+    margin: 25px auto 0 auto;
 }
 
 button{
